@@ -1,0 +1,94 @@
+body{
+    background-color: #f7ecde;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    width: 220px;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 8px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+h1:hover::after{
+    height: 70%;
+}
+/* ********************************************** */
+
+.book_makr-body {
+    border-bottom: 1px dotted black;
+    border-top: 1px dotted black;
+}
+
+.book_makr-body h2{
+    font-family:"Righteous", sans-serif;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    color: transparent;
+    background-clip: text;
+}
+
+.form-control:focus{
+    border-color: #d99c39;;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+/* ***************************************** */
+
+table tbody .view button {
+    color: #fff;
+    background-color: #9eb23b;
+    border-radius: 2px;
+    border: 1px solid #9eb23b;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 0.375rem 0.75rem;
+}
+
+table tbody .view button i{
+    color:white;
+}
+
+
+table tbody .view button:hover{
+    background-color: #8a9e23;
+    border-color: #6e8018;
+}
+
+table tbody .delete button {
+    color: #fff;
+    background-color: #eb1d36;
+    border-radius: 2px;
+    border: 1px solid #eb1d36;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 0.375rem 0.75rem;
+}
+
+table tbody .delete button i{
+    color:white;
+}
+
+
+table tbody .delete button:hover{
+    background-color: #d30820;
+    border-color: #ba081d;
+}
+
+/* ******************************************* */
+::selection{
+    background-color: #FEC260;
+}
