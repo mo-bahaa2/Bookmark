@@ -128,7 +128,7 @@ document.getElementById("bodyTaple").innerHTML=cartona;
 
 function validform(item){
     var reg={
-        siteName:/^\w{3,}$/gi,
+        siteName:/^[\w\s]{3,}$/gi,
         siteUrl:/^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]*)?$/igm
     }
     if(reg[item.id].test(item.value)){
